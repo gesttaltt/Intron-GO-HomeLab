@@ -9,8 +9,6 @@ def fetch_go(aspect: str, batch=1000):
     params = {
         "taxonId": "9606",
         "aspect": aspect,           # BP/MF/CC
-        "geneProductType": "protein",
-        "goUsage": "descendants",
         "limit": str(batch),
         "includeFields": "goId,goName,geneProductId,symbol,evidenceCode"
     }
@@ -21,6 +19,8 @@ def fetch_go(aspect: str, batch=1000):
         while True:
             params["page"] = str(page)
             r = requests.get(url, params=params, headers={"Accept":"application/json"})
+            if r.status_code != 200:
+                print(f"Error {r.status_code}: {r.text}")
             r.raise_for_status()
             j = r.json()
             results = j.get("results", [])
