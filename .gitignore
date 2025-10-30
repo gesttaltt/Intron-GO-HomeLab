@@ -1,1 +1,6 @@
 local-reports/
+venv/
+data/
+*.pyc
+__pycache__/
+.DS_Store

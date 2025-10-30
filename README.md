@@ -18,7 +18,7 @@ Successfully implemented **three major optimizations** achieving:
 - **135× more GO terms scored** (12 → 1,622 functionomes)
 - **Complete LOEUF constraint weighting** (17,941 genes)
 
-**See:** `local-reports/functionome-cascade-analysis.md` for biological insights and cascade implications.
+**See:** `docs/functionome-cascade-analysis.md` for biological insights and cascade implications.
 
 ## Performance Summary
 
@@ -116,7 +116,7 @@ The highest-scoring functionomes reveal interesting patterns:
 - **Cellular compartments** (cytosol, nucleus) aggregate high variant burden
 - **DNA-binding functionomes** exhibit strong constraint + moderate density
 
-**Key Finding:** Functionomes cluster into fragility tiers, suggesting hierarchical vulnerability where perturbations cascade through interacting modules. See `local-reports/functionome-cascade-analysis.md` for detailed interpretation.
+**Key Finding:** Functionomes cluster into fragility tiers, suggesting hierarchical vulnerability where perturbations cascade through interacting modules. See `docs/functionome-cascade-analysis.md` for detailed interpretation.
 
 ## Technical Optimizations
 
@@ -154,9 +154,9 @@ The highest-scoring functionomes reveal interesting patterns:
 ## Documentation
 
 - **`README.md`** (this file) - Project overview and quickstart
-- **`local-reports/optimization-complete.md`** - Technical optimization details
-- **`local-reports/functionome-cascade-analysis.md`** - Biological insights and cascade patterns
-- **`local-reports/protein-resonance-hypothesis.md`** - Experimental framework (speculative)
+- **`docs/optimization-complete.md`** - Technical optimization details
+- **`docs/functionome-cascade-analysis.md`** - Biological insights and cascade patterns
+- **`docs/protein-resonance-hypothesis.md`** - Experimental framework (speculative)
 
 ## Data Sources
 
@@ -211,4 +211,4 @@ See LICENSE file for details.
 **Project:** Functionome Atlas
 **Last updated:** 2025-10-30
 **Status:** Production-ready for chr21, whole-genome extension in progress
-**Repository:** https://github.com/gesttaltt/Intron-GO-HomeLab
+**Repository:** https://github.com/gesttaltt/Functionome-Atlas
