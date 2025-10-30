@@ -1,0 +1,16 @@
+name: go-domino
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - polars==1.7.1
+      - pyarrow
+      - duckdb==1.1.3
+      - cyvcf2==0.31.1
+      - pyranges==0.0.129
+      - goatools==1.4.15
+      - requests
+      - tqdm
+      - networkx
+      - matplotlib
